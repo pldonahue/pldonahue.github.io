@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/0407ed4aef00d4db57f6001e710e0a85?family=Castellar"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1b9a038306.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="products.css" />
+    <title>Products</title>
+  </head>
+  <body>
+
+  <!--Sprite-->
+  <svg style="display: none;">
+    <symbol id="facebook" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"
+          />
+        </g>
+      </symbol>
+      <symbol id="twitter" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+			C480.224,136.96,497.728,118.496,512,97.248z"
+          />
+        </g>
+      </symbol>
+      <symbol id="linkedin" viewBox="0 0 512 512">
+        <g>
+          <path
+            d="m475.074219 0h-438.148438c-20.394531 0-36.925781 16.53125-36.925781 36.925781v438.148438c0 20.394531 16.53125 36.925781 36.925781 36.925781h438.148438c20.394531 0 36.925781-16.53125 36.925781-36.925781v-438.148438c0-20.394531-16.53125-36.925781-36.925781-36.925781zm-293.464844 387h-62.347656v-187.574219h62.347656zm-31.171875-213.1875h-.40625c-20.921875 0-34.453125-14.402344-34.453125-32.402344 0-18.40625 13.945313-32.410156 35.273437-32.410156 21.328126 0 34.453126 14.003906 34.859376 32.410156 0 18-13.53125 32.402344-35.273438 32.402344zm255.984375 213.1875h-62.339844v-100.347656c0-25.21875-9.027343-42.417969-31.585937-42.417969-17.222656 0-27.480469 11.601563-31.988282 22.800781-1.648437 4.007813-2.050781 9.609375-2.050781 15.214844v104.75h-62.34375s.816407-169.976562 0-187.574219h62.34375v26.558594c8.285157-12.78125 23.109375-30.960937 56.1875-30.960937 41.019531 0 71.777344 26.808593 71.777344 84.421874zm0 0"
+          />
+        </g>
+      </symbol>
+      <symbol id="instagram" viewBox="0 0 512 512">
+        <g>
+          <path d="m75 512h362c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-362c-24.8125 0-45-20.1875-45-45zm0 0"/><path d="m256 391c74.4375 0 135-60.5625 135-135s-60.5625-135-135-135-135 60.5625-135 135 60.5625 135 135 135zm0-240c57.898438 0 105 47.101562 105 105s-47.101562 105-105 105-105-47.101562-105-105 47.101562-105 105-105zm0 0"/><path d="m406 151c24.8125 0 45-20.1875 45-45s-20.1875-45-45-45-45 20.1875-45 45 20.1875 45 45 45zm0-60c8.269531 0 15 6.730469 15 15s-6.730469 15-15 15-15-6.730469-15-15 6.730469-15 15-15zm0 0"/>
+        </g>
+      </symbol>
+  </svg>
+  
+    <!--Navbar-->
+    <header class="header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-home"></i>
+        </a>
+        <a href="products.html" class="nav-link nav-link--active">Products</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="team.html" class="nav-link">Team</a>
+      </nav>
+       <!--Burger-menu-->
+       <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </header>
+
+    <!--Plant care tips-->
+    <div class="tips">
+      <div class="tips-inner">
+        <h1>Be amazed by our products!</h1>
+        <div class="tips-container">
+            <div class="tips-content-container">
+          <div class="tips-content anim" data-delay="0s">
+            <p class="tips-content-title">Plant care tips</p>
+            <!--Col1-->
+            <div class="tips-items">
+              <div class="tips-item">
+                <div class="tips-item-title">Water</div>
+                <div class="tips-item-icon">
+                  <i class="fas fa-tint"></i>
+                </div>
+                <div class="tips-item-text">
+                  Water when the soil feels dry to the touch a fingers length
+                  down.
+                </div>
+              </div>
+              <!--Col2-->
+              <div class="tips-item">
+                <div class="tips-item-title">Light</div>
+                <div class="tips-item-icon">
+                  <i class="fas fa-sun"></i>
+                </div>
+                <div class="tips-item-text">Bright Indirect</div>
+              </div>
+              <!--Col3-->
+              <div class="tips-item">
+                <div class="tips-item-title">Difficulty</div>
+                <div class="tips-item-icon">
+                  <i class="fas fa-thumbs-up"></i>
+                </div>
+                <div class="tips-item-text">
+                  Easy! Great for beginners and can take a fair amount of
+                  neglect.
+                </div>
+              </div>
+            </div>
+            <!--./tips-items-->
+            <p class="tips-text-title">WATERING TIPS</p>
+            <p class="tips-content-text">
+              Plants have roots the entire length of their pot, so make sure to
+              thoroughly drench the soil until you see water run out of the
+              bottom of your container.
+            </p>
+          </div>
+          <!--./tips-content-->
+        </div><!--./tips-content-container-->
+          <p class="tips-text">
+            Throughout our 30+ years of business, we've established an extensive
+            network of cross country plant nurseries to bring NYC the best, most
+            affordable online houseplant selection delivered right to your door.
+        </div>
+        <!--tips-inner-->
+      </div>
+      <!--./tips-container-->
+      </p>
+    </div><!--./tips-->
+
+    <!--Categories-->
+    <div class="categories" id="categories">
+        <div class="categories-inner">
+            <h2>What kind of product are you interested in?</h2>
+            <div class="categories-items anim" data-delay="0s">
+                <div class="category">
+                    <div class="category-image">
+                        <a href="#plants"><img src="ProductsImg/Category1.png" alt="" class="category-img"></a>
+                    </div>
+                    <a href="#plants" class="category-title">Plants</a>
+                </div>
+                <div class="category">
+                    <div class="category-image">
+                        <a href="#pots"><img src="ProductsImg/Category2.png" alt="" class="category-img"></a>
+                    </div>
+                    <a href="#pots" class="category-title">Pots</a>
+                </div>
+                <div class="category">
+                    <div class="category-image">
+                        <a href="#supports"><img src="ProductsImg/Category3.png" alt="" class="category-img"></a>
+                    </div>
+                    <a href="#supports" class="category-title">Supports</a>
+                </div>
+            </div><!--./categories-items-->
+            
+            
+        </div><!--./categories-inner-->
+    </div><!--./categories-->
+
+    <div class="line">
+      <img src="ProductsImg/Line.png" alt="">
+  </div>
+  
+    <!--Search-bar-->
+<form action="" class="input-form">
+  <input id="elastic" class="input-search" type="text"  placeholder="Search"
+  aria-label="Search">
+  <i class="fas fa-search" aria-hidden="true"></i>
+
+</form>
+
+    <!--Products-->
+    <!--------Plants--------->
+    <div class="products" id="plants">
+        <div class="products-inner">
+            <div class="products-items anim" data-delay="0s">
+<ul class="elastic">
+               <li> <div class="product-item">
+                    <div class="product-image product-image--1">
+                        <img src="ProductsImg/Plant1.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Song of India</div>
+                    <div class="product-price">45$</div>
+                </div></li>
+
+                <li><div class="product-item">
+                    <div class="product-image product-image--2">
+                        <img src="ProductsImg/Plant2.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Snake Plant</div>
+                    <div class="product-price">30$</div>
+                </div></li>
+
+                <li><div class="product-item">
+                    <div class="product-image product-image--3">
+                        <img src="ProductsImg/Plant3.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Bird of paradise</div>
+                    <div class="product-price">50$</div>
+                </div></li>
+
+                <li> <div class="product-item">
+                    <div class="product-image product-image--4">
+                        <img src="ProductsImg/Plant4.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Marble Queen</div>
+                    <div class="product-price">45$</div>
+                </div></li>
+
+                <li> <div class="product-item">
+                    <div class="product-image product-image--5">
+                        <img src="ProductsImg/Plant5.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name"> Brandtianum</div>
+                    <div class="product-price">20$</div>
+                </div></li>
+
+                <li> <div class="product-item">
+                    <div class="product-image product-image--6">
+                        <img src="ProductsImg/Plant6.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Ficus Elastica</div>
+                    <div class="product-price">35$</div>
+                </div></li>
+            </div><!--./products-items-->
+          </ul>
+        </div><!--./products-inner-->
+    </div><!--./products-->
+<hr id="hr">
+
+    <!--------Pots--------->
+    <div class="products" id="pots">
+        <div class="products-inner">
+            <div class="products-items anim" data-delay="0s">
+              <ul class="elastic">
+                <li><div class="product-item">
+                    <div class="product-image product-image--7">
+                        <img src="ProductsImg/Pot1.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Hexagon pot</div>
+                    <div class="product-price">10$</div>
+                </div></li>
+
+                <li><div class="product-item">
+                    <div class="product-image product-image--8">
+                        <img src="ProductsImg/Pot2.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Vayu pot</div>
+                    <div class="product-price">20$</div>
+                </div></li>
+
+                <li><div class="product-item">
+                    <div class="product-image product-image--9">
+                        <img src="ProductsImg/Pot3.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Ceramic pot</div>
+                    <div class="product-price">15$</div>
+                </div></li>
+                
+            </div><!--./products-items-->
+          </ul>
+        </div><!--./products-inner-->
+    </div><!--./products-->
+    <hr id="hr">
+
+    <!--------Supports--------->
+    <div class="products" id="supports">
+        <div class="products-inner">
+            <div class="products-items anim" data-delay="0s">
+              <ul class="elastic">
+                <li><div class="product-item">
+                    <div class="product-image product-image--10">
+                        <img src="ProductsImg/Support1.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Wall plant holders</div>
+                    <div class="product-price">80$</div>
+                </div></li>
+
+                <li> <div class="product-item">
+                    <div class="product-image product-image--11">
+                        <img src="ProductsImg/Support2.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Dimond hanger</div>
+                    <div class="product-price">30$</div>
+                </div></li>
+
+                <li> <div class="product-item">
+                    <div class="product-image product-image--12">
+                        <img src="ProductsImg/Support3.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Coconut hanger</div>
+                    <div class="product-price">20$</div>
+                </div></li>
+
+                <li><div class="product-item">
+                    <div class="product-image product-image--13">
+                        <img src="ProductsImg/Support4.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">White chairs</div>
+                    <div class="product-price">35$</div>
+                </div></li>
+
+                <li> <div class="product-item">
+                    <div class="product-image product-image--14">
+                        <img src="ProductsImg/Support55.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Translucide hanger</div>
+                    <div class="product-price">50$</div>
+                </div></li>
+
+                <li> <div class="product-item">
+                    <div class="product-image product-image--15">
+                        <img src="ProductsImg/Support6.png" alt="" class="product-img">
+                    </div>
+                    <div class="product-name">Wood plant boxes</div>
+                    <div class="product-price">75$</div>
+                </div></li>
+            </div><!--./products-items-->
+          </ul>
+        </div><!--./products-inner-->
+    </div><!--./products-->
+<hr id="hr1">
+<img class="logo" src="Images/Logo.png" alt="">
+
+<!--Section-footer-->
+<section class="section-footer">
+    <div class="section-info">
+        <h3>Did you find something cool? </h3>
+        <div class="space"></div>
+        <p class="section-text">We like to remind you that all the products presented are available in our store! </p>
+        <div class="space"></div>
+        <p class="section-text">For more informations about the acquisition process and our policy click down below!</p>
+        <a href="index.html" class="section-button"><div>About Us</div></a>
+    </div>
+</section>
+
+<!--Footer-->
+<footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-block">
+        <h4 class="footer-title">Location</h4>
+        <address class="footer-address">
+          <div>2715 Ash Dr. San</div>
+          <div>Jose, South Dakota 83475</div>
+        </address>
+      </div>
+
+      <div class="footer-block">
+        <h4 class="footer-title">CONNECT WITH US</h4>
+        <div class="social">
+          <a class="social-item" href="https://www.facebook.com/artofbloomshop" target="_blank">
+            <svg class="social-icon">
+              <use xlink:href="#facebook"></use>
+            </svg>
+          </a>
+          <a class="social-item" href="https://www.instagram.com/art_of_bloom_shop/" target="_blank">
+            <svg class="social-icon">
+              <use xlink:href="#instagram"></use>
+            </svg>
+          </a>
+          <a class="social-item" href="https://www.linkedin.com/feed/" target="_blank">
+            <svg class="social-icon">
+              <use xlink:href="#linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-block">
+        <h4 class="footer-title">About Art Of Bloom</h4>
+        <div class="footer-text">
+          <p>
+            If you want to receive exclusive offers, subscribe to our <a href="https://mailchi.mp/3e81ac154021/artofbloom" target="_blank" class="newsletter-link">newsletter</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--./footer-inner-->
+
+    <!--Copyrights-->
+    <div class="copyright">
+      <div class="copyright-text">
+        <div>Copyright @ 2020 Art of Bloom. All Rights Reserved</div>
+        Made by Avacaritei, Butacu, Manole</div>
+      </div>
+    </div>
+  </footer>
+
+  <!--Top-button-->
+  <a id="back2Top" title="Back to top" href="#">
+    <i class="fas fa-chevron-circle-up"></i>
+  </a>
+
+  
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+ <script src="app.js"></script>
+ <script src="app1.js"></script>
+  </body>
+</html>
