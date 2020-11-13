@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="manifest" href="" />
+    <link rel="apple-touch-icon" href="" />
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="stylesheet"
+      href="https://github.com/chartjs/Chart.js/releases/download/v2.9.3/Chart.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/pages/home/index.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <div class="home">
+      <aside class="sidebar">
+        <div class="sidebar__inner">
+          <div class="sidebar__logo">
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+          <div class="sidebar__links">
+            <a href="/" class="sidebar-link sidebar-link--active">
+              <img src="img/dashboard-icon.svg" />
+              <span>Dashboard</span>
+            </a>
+            <a href="/" class="sidebar-link">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>Iconly/Bold/Category</title>
+                <g
+                  id="Symbols"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dashboard/Left-Panel/User/Wide"
+                    transform="translate(-26.000000, -362.000000)"
+                    fill="#666666"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Navigation"
+                      transform="translate(0.000000, 288.000000)"
+                    >
+                      <g
+                        id="Dashboard/Left-Panel/Default"
+                        transform="translate(24.000000, 72.000000)"
+                      >
+                        <g
+                          id="Activity"
+                          transform="translate(1.999700, 2.000000)"
+                        >
+                          <path
+                            d="M13.45,1.7803 C13.41,2.0303 13.39,2.2803 13.39,2.5303 C13.39,4.7803 15.21,6.5993 17.45,6.5993 C17.7,6.5993 17.94,6.5703 18.19,6.5303 L18.19,6.5303 L18.19,14.5993 C18.19,17.9903 16.19,20.0003 12.79,20.0003 L12.79,20.0003 L5.401,20.0003 C2,20.0003 1.77635684e-15,17.9903 1.77635684e-15,14.5993 L1.77635684e-15,14.5993 L1.77635684e-15,7.2003 C1.77635684e-15,3.8003 2,1.7803 5.401,1.7803 L5.401,1.7803 Z M13.651,7.8603 C13.38,7.8303 13.111,7.9503 12.95,8.1703 L12.95,8.1703 L10.531,11.3003 L7.76,9.1203 C7.59,8.9903 7.39,8.9393 7.19,8.9603 C6.991,8.9903 6.811,9.0993 6.69,9.2593 L6.69,9.2593 L3.731,13.1103 L3.67,13.2003 C3.5,13.5193 3.58,13.9293 3.88,14.1503 C4.02,14.2403 4.17,14.3003 4.34,14.3003 C4.571,14.3103 4.79,14.1893 4.93,14.0003 L4.93,14.0003 L7.44,10.7693 L10.29,12.9103 L10.38,12.9693 C10.7,13.1393 11.1,13.0603 11.33,12.7593 L11.33,12.7593 L14.22,9.0303 L14.18,9.0503 C14.34,8.8303 14.37,8.5503 14.26,8.3003 C14.151,8.0503 13.91,7.8803 13.651,7.8603 Z M17.5901,1.77635684e-15 C18.9201,1.77635684e-15 20.0001,1.08 20.0001,2.41 C20.0001,3.74 18.9201,4.82 17.5901,4.82 C16.2601,4.82 15.1801,3.74 15.1801,2.41 C15.1801,1.08 16.2601,1.77635684e-15 17.5901,1.77635684e-15 Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Usage</span>
+            </a>
+            <a href="/" class="sidebar-link">
+              <svg
+                width="22px"
+                height="16px"
+                viewBox="0 0 22 16"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>Iconly/Bold/Category</title>
+                <g
+                  id="Symbols"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dashboard/Left-Panel/User/Wide"
+                    transform="translate(-25.000000, -420.000000)"
+                    fill="#666666"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Navigation"
+                      transform="translate(0.000000, 288.000000)"
+                    >
+                      <g
+                        id="Dashboard/Left-Panel/Default"
+                        transform="translate(24.000000, 128.000000)"
+                      >
+                        <g
+                          id="3-User"
+                          transform="translate(1.000000, 4.000000)"
+                        >
+                          <path
+                            d="M10.9490292,10.5396211 C14.3802124,10.5396211 17.3099701,11.0835876 17.3099701,13.2603542 C17.3099701,15.4362202 14.3990159,16 10.9490292,16 C7.51784599,16 4.58808829,15.4560335 4.58808829,13.2801675 C4.58808829,11.1034009 7.49904253,10.5396211 10.9490292,10.5396211 Z M16.4350721,9.22887796 C17.7468371,9.20456157 19.1570964,9.38468293 19.6782208,9.51256909 C20.7822523,9.72961533 21.5084239,10.1727139 21.8092792,10.8166477 C22.0635736,11.3453039 22.0635736,11.9586171 21.8092792,12.4863727 C21.3490422,13.4851456 19.8653599,13.8057616 19.2887206,13.8886175 C19.169632,13.9066296 19.0738239,13.8030598 19.0863596,13.6832791 C19.3809471,10.9157145 17.0376781,9.60353038 16.4314905,9.30182711 C16.4055238,9.288318 16.4001514,9.26760405 16.4028376,9.25499555 C16.4046284,9.24598949 16.4153733,9.23157978 16.4350721,9.22887796 Z M5.31858262,9.22701175 L5.56559944,9.2292382 C5.5852983,9.23194002 5.59514773,9.24634973 5.59693854,9.25445519 C5.59962474,9.26796429 5.59425233,9.28777764 5.56918105,9.30218735 C4.96209801,9.60389062 2.6188291,10.9160747 2.91341659,13.6827387 C2.92595223,13.8034201 2.83103954,13.9060892 2.71195098,13.8889777 C2.13531163,13.8061219 0.651629328,13.4855059 0.191392331,12.4867329 C-0.0637974436,11.9580768 -0.0637974436,11.3456641 0.191392331,10.817008 C0.492247644,10.1730741 1.21752385,9.72997557 2.3215554,9.51202873 C2.84357518,9.38504317 4.25293906,9.20492182 5.56559944,9.2292382 Z M10.9490292,4.4408921e-15 C13.2851349,4.4408921e-15 15.1583174,1.88226818 15.1583174,4.23285188 C15.1583174,6.58253498 13.2851349,8.46660437 10.9490292,8.46660437 C8.61292351,8.46660437 6.73974103,6.58253498 6.73974103,4.23285188 C6.73974103,1.88226818 8.61292351,4.4408921e-15 10.9490292,4.4408921e-15 Z M16.6633998,0.705895597 C18.9198147,0.705895597 20.6918166,2.84123428 20.0883152,5.2197368 C19.680907,6.82101566 18.2061787,7.88463227 16.5631147,7.84140315 C16.3983606,7.83690011 16.2362927,7.8215898 16.0795972,7.79457159 C15.9658811,7.77475824 15.9085753,7.64597147 15.9730443,7.55050715 C16.5998262,6.62288217 16.9570919,5.50703036 16.9570919,4.30922334 C16.9570919,3.05918112 16.5666963,1.89379595 15.8888765,0.938252147 C15.8673868,0.908532124 15.8512695,0.862601178 15.8727592,0.82837812 C15.8906673,0.800459309 15.9237972,0.786049601 15.9551363,0.778844747 C16.1834639,0.732013194 16.4180595,0.705895597 16.6633998,0.705895597 Z M5.33592864,0.705805536 C5.58126899,0.705805536 5.8158645,0.731923133 6.0450876,0.778754686 C6.07553129,0.78595954 6.10955659,0.801269856 6.12746465,0.828288059 C6.14805891,0.862511117 6.13283706,0.908442063 6.1113474,0.938162087 C5.43352754,1.89370588 5.04313196,3.05909106 5.04313196,4.30913328 C5.04313196,5.5069403 5.40039764,6.62279211 6.02717954,7.55041709 C6.09164854,7.64588141 6.03434276,7.77466818 5.92062662,7.79448153 C5.76303574,7.82240034 5.60186325,7.83681005 5.43710915,7.84131308 C3.79404516,7.88454221 2.31931689,6.8209256 1.91190865,5.21964674 C1.30751182,2.84114422 3.0795138,0.705805536 5.33592864,0.705805536 Z"
+                            id="3-Friends"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Users</span>
+            </a>
+            <a href="/" class="sidebar-link">
+              <svg
+                width="18px"
+                height="20px"
+                viewBox="0 0 18 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>Iconly/Bold/Category</title>
+                <g
+                  id="Symbols"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dashboard/Left-Panel/User/Wide"
+                    transform="translate(-27.000000, -474.000000)"
+                    fill="#666666"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Navigation"
+                      transform="translate(0.000000, 288.000000)"
+                    >
+                      <g
+                        id="Dashboard/Left-Panel/Default"
+                        transform="translate(24.000000, 184.000000)"
+                      >
+                        <g
+                          id="Document"
+                          transform="translate(3.000000, 2.000000)"
+                        >
+                          <path
+                            d="M13.191,0 C16.28,0 18,1.78 18,4.83 L18,4.83 L18,15.16 C18,18.26 16.28,20 13.191,20 L13.191,20 L4.81,20 C1.77,20 0,18.26 0,15.16 L0,15.16 L0,4.83 C0,1.78 1.77,0 4.81,0 L4.81,0 Z M5.08,13.74 C4.78,13.71 4.49,13.85 4.33,14.11 C4.17,14.36 4.17,14.69 4.33,14.95 C4.49,15.2 4.78,15.35 5.08,15.31 L5.08,15.31 L12.92,15.31 C13.319,15.27 13.62,14.929 13.62,14.53 C13.62,14.12 13.319,13.78 12.92,13.74 L12.92,13.74 Z M12.92,9.179 L5.08,9.179 C4.649,9.179 4.3,9.53 4.3,9.96 C4.3,10.39 4.649,10.74 5.08,10.74 L5.08,10.74 L12.92,10.74 C13.35,10.74 13.7,10.39 13.7,9.96 C13.7,9.53 13.35,9.179 12.92,9.179 L12.92,9.179 Z M8.069,4.65 L5.08,4.65 L5.08,4.66 C4.649,4.66 4.3,5.01 4.3,5.44 C4.3,5.87 4.649,6.22 5.08,6.22 L5.08,6.22 L8.069,6.22 C8.5,6.22 8.85,5.87 8.85,5.429 C8.85,5 8.5,4.65 8.069,4.65 L8.069,4.65 Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Account Details</span>
+            </a>
+            <a href="/" class="sidebar-link">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>Iconly/Bold/Category</title>
+                <g
+                  id="Symbols"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dashboard/Left-Panel/User/Wide"
+                    transform="translate(-26.000000, -530.000000)"
+                    fill="#666666"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Navigation"
+                      transform="translate(0.000000, 288.000000)"
+                    >
+                      <g
+                        id="Dashboard/Left-Panel/Default"
+                        transform="translate(24.000000, 240.000000)"
+                      >
+                        <g
+                          id="Discovery"
+                          transform="translate(1.999900, 2.000100)"
+                        >
+                          <path
+                            d="M10,0 C15.52,0 20,4.48 20,10 C20,15.53 15.52,20 10,20 C4.47,20 0,15.53 0,10 C0,4.48 4.47,0 10,0 Z M13.85,6.71 C13.96,6.36 13.64,6.03 13.29,6.14 L13.29,6.14 L8.17,7.74 C7.96,7.81 7.79,7.97 7.73,8.18 L7.73,8.18 L6.13,13.31 C6.02,13.65 6.35,13.98 6.69,13.87 L6.69,13.87 L11.79,12.27 C12,12.21 12.17,12.04 12.23,11.83 L12.23,11.83 Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Apps</span>
+            </a>
+            <a href="/" class="sidebar-link">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>Iconly/Bold/Category</title>
+                <g
+                  id="Symbols"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dashboard/Left-Panel/User/Wide"
+                    transform="translate(-26.000000, -586.000000)"
+                    fill="#666666"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Navigation"
+                      transform="translate(0.000000, 288.000000)"
+                    >
+                      <g
+                        id="Dashboard/Left-Panel/Default-Copy"
+                        transform="translate(24.000000, 296.000000)"
+                      >
+                        <g
+                          id="Setting"
+                          transform="translate(2.499897, 2.000100)"
+                        >
+                          <path
+                            d="M10.217226,0 C10.9734745,0 11.6581859,0.42 12.0363101,1.04 C12.2202625,1.34 12.3428973,1.71 12.3122386,2.1 C12.2917995,2.4 12.3837756,2.7 12.5472888,2.98 C13.0684871,3.83 14.2232989,4.15 15.1226214,3.67 C16.1343592,3.09 17.411806,3.44 17.9943217,4.43 L17.9943217,4.43 L18.6790331,5.61 C19.2717684,6.6 18.944742,7.87 17.9227847,8.44 C17.0541209,8.95 16.7475337,10.08 17.2687319,10.94 C17.4322451,11.21 17.6161974,11.44 17.9023455,11.58 C18.2600306,11.77 18.5359591,12.07 18.730131,12.37 C19.1082552,12.99 19.0775965,13.75 18.7096918,14.42 L18.7096918,14.42 L17.9943217,15.62 C17.6161974,16.26 16.9110468,16.66 16.1854571,16.66 C15.827772,16.66 15.4292086,16.56 15.1021823,16.36 C14.8364734,16.19 14.5298861,16.13 14.2028598,16.13 C13.191122,16.13 12.3428973,16.96 12.3122386,17.95 C12.3122386,19.1 11.3720378,20 10.1967868,20 L10.1967868,20 L8.8069248,20 C7.62145424,20 6.68125344,19.1 6.68125344,17.95 C6.6608143,16.96 5.81258967,16.13 4.80085186,16.13 C4.46360592,16.13 4.15701871,16.19 3.90152936,16.36 C3.574503,16.56 3.16572005,16.66 2.81825454,16.66 C2.08244522,16.66 1.37729463,16.26 0.999170395,15.62 L0.999170395,15.62 L0.2940198,14.42 C-0.0841044313,13.77 -0.104543579,12.99 0.273580653,12.37 C0.437093834,12.07 0.743681049,11.77 1.09114656,11.58 C1.37729463,11.44 1.56124696,11.21 1.73497971,10.94 C2.2459584,10.08 1.93937119,8.95 1.07070741,8.44 C0.0589696023,7.87 -0.26805676,6.6 0.314458948,5.61 L0.314458948,5.61 L0.999170395,4.43 C1.59190568,3.44 2.85913283,3.09 3.88109021,3.67 C4.77019314,4.15 5.92500498,3.83 6.44620325,2.98 C6.60971643,2.7 6.70169259,2.4 6.68125344,2.1 C6.6608143,1.71 6.77322961,1.34 6.96740151,1.04 C7.34552574,0.42 8.03023719,0.02 8.77626608,0 L8.77626608,0 Z M9.51207539,7.18 C7.9076023,7.18 6.60971643,8.44 6.60971643,10.01 C6.60971643,11.58 7.9076023,12.83 9.51207539,12.83 C11.1165485,12.83 12.3837756,11.58 12.3837756,10.01 C12.3837756,8.44 11.1165485,7.18 9.51207539,7.18 Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Institutional Settings</span>
+            </a>
+            <a href="/" class="sidebar-link">
+              <svg
+                width="20px"
+                height="18px"
+                viewBox="0 0 20 18"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>Iconly/Bold/Category</title>
+                <g
+                  id="Symbols"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dashboard/Left-Panel/User/Wide"
+                    transform="translate(-26.000000, -643.000000)"
+                    fill="#666666"
+                    fill-rule="nonzero"
+                  >
+                    <g
+                      id="Navigation"
+                      transform="translate(0.000000, 288.000000)"
+                    >
+                      <g
+                        id="Dashboard/Left-Panel/Default-Copy-2"
+                        transform="translate(24.000000, 352.000000)"
+                      >
+                        <g
+                          id="Wallet"
+                          transform="translate(2.000000, 3.000000)"
+                        >
+                          <path
+                            d="M14.5155556,3.55271368e-15 C17.9644444,3.55271368e-15 20,1.98459316 20,5.38180067 L20,5.38180067 L15.7688889,5.38180067 L15.7688889,5.41646606 C13.8052098,5.41646606 12.2133333,6.96848811 12.2133333,8.88300433 C12.2133333,10.7975206 13.8052098,12.3495426 15.7688889,12.3495426 L15.7688889,12.3495426 L20,12.3495426 L20,12.6615311 C20,16.0154068 17.9644444,18 14.5155556,18 L14.5155556,18 L5.48444444,18 C2.03555556,18 -1.77635684e-14,16.0154068 -1.77635684e-14,12.6615311 L-1.77635684e-14,12.6615311 L-1.77635684e-14,5.33846895 C-1.77635684e-14,1.98459316 2.03555556,3.55271368e-15 5.48444444,3.55271368e-15 L5.48444444,3.55271368e-15 Z M19.2533333,6.87241213 C19.6657059,6.87241213 20,7.19833676 20,7.60038517 L20,7.60038517 L20,10.1309581 C19.9951999,10.531052 19.6637012,10.8542512 19.2533333,10.8589312 L19.2533333,10.8589312 L15.8488889,10.8589312 C14.8547801,10.8719719 13.9854845,10.2083726 13.76,9.26432354 C13.64708,8.67829202 13.8055982,8.0735653 14.1930699,7.61221673 C14.5805417,7.15086815 15.1573445,6.88007476 15.7688889,6.87241213 L15.7688889,6.87241213 Z M16.2488889,8.0423688 L15.92,8.0423688 C15.7180785,8.04005257 15.5236085,8.11663883 15.3799861,8.25503736 C15.2363636,8.39343589 15.1555556,8.58212842 15.1555556,8.77900818 C15.1555276,9.19205439 15.4963752,9.5282326 15.92,9.53298026 L15.92,9.53298026 L16.2488889,9.53298026 C16.6710799,9.53298026 17.0133333,9.19929552 17.0133333,8.78767453 C17.0133333,8.37605354 16.6710799,8.0423688 16.2488889,8.0423688 L16.2488889,8.0423688 Z M10.3822222,3.89118922 L4.73777778,3.89118922 C4.31903387,3.89116161 3.97820245,4.21959601 3.97333333,4.6278286 C3.97333333,5.0408748 4.31415294,5.37705302 4.73777778,5.38180067 L4.73777778,5.38180067 L10.3822222,5.38180067 C10.8044132,5.38180067 11.1466667,5.04811593 11.1466667,4.63649494 C11.1466667,4.22487396 10.8044132,3.89118922 10.3822222,3.89118922 L10.3822222,3.89118922 Z"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Billing</span>
+            </a>
+            <a href="/" class="sidebar-link sidebar-link--rect-hover">
+              <svg
+                width="20px"
+                height="20px"
+                viewBox="0 0 20 20"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <title>Iconly/Bold/Category</title>
+                <defs>
+                  <path
+                    d="M12,1.99999996 C6.47999998,1.99999996 1.99999996,6.47999998 1.99999996,12 C1.99999996,17.52 6.47999998,22 12,22 C17.52,22 22,17.52 22,12 C22,6.47999998 17.52,1.99999996 12,1.99999996 L12,1.99999996 Z M13,19 L11,19 L11,17 L13,17 L13,19 L13,19 Z M15.07,11.25 L14.17,12.17 C13.45,12.9 13,13.5 13,15 L11,15 L11,14.5 C11,13.4 11.45,12.4 12.17,11.67 L13.41,10.41 C13.78,10.05 14,9.54999999 14,8.99999997 C14,7.89999998 13.1,6.99999997 12,6.99999997 C10.9,6.99999997 9.99999998,7.89999998 9.99999998,8.99999997 L7.99999998,8.99999997 C7.99999998,6.78999998 9.78999999,4.99999997 12,4.99999997 C14.21,4.99999997 16,6.78999998 16,8.99999997 C16,9.87999999 15.64,10.68 15.07,11.25 L15.07,11.25 Z"
+                    id="path-1"
+                  ></path>
+                </defs>
+                <g
+                  id="Symbols"
+                  stroke="none"
+                  stroke-width="1"
+                  fill="none"
+                  fill-rule="evenodd"
+                >
+                  <g
+                    id="Dashboard/Left-Panel/User/Wide"
+                    transform="translate(-26.000000, -698.000000)"
+                  >
+                    <g
+                      id="Navigation"
+                      transform="translate(0.000000, 288.000000)"
+                    >
+                      <g
+                        id="Iconly/Bold/Category"
+                        transform="translate(24.000000, 408.000000)"
+                      >
+                        <polygon
+                          id="Base"
+                          points="-5.00000112e-08 -4.9999926e-08 24 -4.9999926e-08 24 24.0000001 -5.00000112e-08 24.0000001"
+                        ></polygon>
+                        <mask id="mask-2" fill="white">
+                          <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Icon" fill-rule="nonzero"></g>
+                        <rect
+                          id="↳-🎨-Color"
+                          fill="#666666"
+                          fill-rule="nonzero"
+                          mask="url(#mask-2)"
+                          x="0"
+                          y="0"
+                          width="24"
+                          height="24"
+                        ></rect>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <span>Help</span>
+            </a>
+          </div>
+          <div class="sidebar__footer">
+            <img src="./img/logo-footer.png" alt="logo" />
+          </div>
+        </div>
+      </aside>
+      <div class="sidebar-menu">
+        <img src="./img/menu.svg" />
+      </div>
+      <main class="home__main">
+        <h1>Your Dashboard</h1>
+
+        <section class="welcome box">
+          <div class="welcome__close">
+            <img src="img/icon-close.svg" alt="close" />
+          </div>
+          <div class="welcome__inner">
+            <div class="welcome__details">
+              <h2 class="welcome__title">Welcome to Caption.Ed!</h2>
+              <p class="description">
+                This is your Caption.Ed Dashboard. From here you can manage your
+                account including seeing your usage, adding more minutes and
+                installing Caption.Ed apps. Get started by installing Caption.Ed
+                here.
+              </p>
+            </div>
+            <div class="welcome__cta">
+              <button class="button">Install Caption.Ed Now!</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats">
+          <div class="stats__inner">
+            <div class="stat box">
+              <div class="stat__icon">
+                <img src="./img/clock-blue.svg" alt="clock" />
+              </div>
+              <div class="stat__details">
+                <h4 class="stat__details__title">0 mins</h4>
+                <div class="stat__details__description description">
+                  Total usage this week
+                </div>
+              </div>
+            </div>
+            <div class="stat box">
+              <div class="stat__icon">
+                <img src="./img/clock-yellow.svg" alt="clock" />
+              </div>
+              <div class="stat__details">
+                <h4 class="stat__details__title">240 hours</h4>
+                <div class="stat__details__description description">
+                  Remaining Minutes
+                </div>
+              </div>
+              <div class="stat__button">
+                <button class="button button--white">Request More</button>
+              </div>
+            </div>
+            <div class="stat box">
+              <div class="stat__icon">
+                <img src="./img/clock-purple.svg" alt="clock" />
+              </div>
+              <div class="stat__details">
+                <h4 class="stat__details__title">0</h4>
+                <div class="stat__details__description description">
+                  Apps Installed
+                </div>
+              </div>
+            </div>
+            <div class="stat box">
+              <div class="stat__icon">
+                <img src="./img/clock-green.svg" alt="clock" />
+              </div>
+              <div class="stat__details">
+                <h4 class="stat__details__title">2 times</h4>
+                <div class="stat__details__description description">
+                  Usage Cap
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-chart">
+          <div class="stats-chart__inner">
+            <h2 class="stats-chart__title">
+              Minutes Captioning Per Day: Rolling Average
+            </h2>
+            <div class="stats-chart__element__container">
+              <canvas class="stats-chart__element"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-tables">
+          <div class="stats-tables__inner">
+            <div class="stats-tables__left-side">
+              <div class="table-highlighting">
+                <h2>Captioning Highlights: Top 10s</h2>
+                <div class="table-highlighting__tags">
+                  <div class="table-highlighting__tags__left-side">
+                    <div class="tag">More Recent</div>
+                    <div class="tag">More Frequent</div>
+                  </div>
+                  <div class="table-highlighting__tags__right-side">
+                    <div class="tag tag--blue">Go to usage tab</div>
+                  </div>
+                </div>
+                <div class="table-responsive-sm">
+                  <table class="box table table-bordered">
+                    <thead>
+                      
+                      <tr>
+                        <th scope="col">
+                          <div class="table-row">
+                            <span>Name (if applicable)</span>
+                            <div class="sort-arrows">
+                              <img class="sort-arrows__active" src="img/icon-up.svg" />
+                              <img src="img/icon-down.svg" />
+                            </div>
+                          </div>
+                        </th>
+                        <th scope="col">
+                          <div class="table-row">
+                            <span>Source </span>
+                            <div class="sort-arrows">
+                              <img
+                                src="img/icon-up.svg"
+                              />
+                              <img src="img/icon-down.svg" />
+                            </div>
+                          </div>
+                        </th>
+                        <th scope="col">URL</th>
+                        <th scope="col">User</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mark</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>
+                          <div class="table-row">
+                            <div class="table-image">
+                              <img src="./img/table-logo.svg" />
+                            </div>
+                            <span>Thornton</span>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="http://www.panopto.com">
+                            http://www.panopto.com
+                          </a>
+                        </td>
+                        <td class="is-bold">@123</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="stats-tables__right-side">
+              <div class="table-user">
+                <h2>User Requiring Access Approval</h2>
+                <div class="table-user__tags">
+                  <div class="table-user__tags__left-side">
+                    <div class="tag tag--green">Approve All</div>
+                    <div class="tag tag--red">Reject All</div>
+                  </div>
+                  <div class="table-user__tags__right-side">
+                    <div class="tag tag--green">Go to usage tab</div>
+                  </div>
+                </div>
+                <table class="box table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">
+                        <div class="table-row">
+                          <span>First Name</span>
+                          <div class="sort-arrows">
+                            <img src="img/icon-up.svg" />
+                            <img src="img/icon-down.svg" />
+                          </div>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="table-row">
+                          <span>Last Name</span>
+                          <div class="sort-arrows">
+                            <img src="img/icon-up.svg" />
+                            <img src="img/icon-down.svg" />
+                          </div>
+                        </div>
+                      </th>
+                      <th scope="col">
+                        <div class="table-row">
+                          <span> Approval </span>
+                          <div class="sort-arrows">
+                            <img src="img/icon-up.svg" />
+                            <img src="img/icon-down.svg" />
+                          </div>
+                        </div>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="is-bold">Mark</td>
+                      <td class="is-bold">Otto</td>
+                      <td class="table-actions is-bold">
+                        <span class="table-button table-button--green">
+                          <img src="img/approve-icon.svg" />
+                        </span>
+                        <span class="table-button">
+                          <img src="img/close-icon-square.svg" />
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-bold">Jacob</td>
+                      <td class="is-bold">Thornton</td>
+                      <td class="table-actions is-bold">
+                        <span class="table-button table-button--green">
+                          <img src="img/approve-icon.svg" />
+                        </span>
+                        <span class="table-button">
+                          <img src="img/close-icon-square.svg" />
+                        </span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="is-bold">Jacob</td>
+                      <td class="is-bold">Thornton</td>
+                      <td class="table-actions is-bold">
+                        <span class="table-button table-button--green">
+                          <img src="img/approve-icon.svg" />
+                        </span>
+                        <span class="table-button">
+                          <img src="img/close-icon-square.svg" />
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="round-chart">
+                <div class="round-chart__inner">
+                  <h2>
+                    <span>Top Captioning Sources</span>
+                    <div class="tag tag--blue">Go to Usage Tab</div>
+                  </h2>
+                  <div class="round-chart__element">
+                    <svg height="400" width="100%"></svg>
+                    <div class="round-chart__legend"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

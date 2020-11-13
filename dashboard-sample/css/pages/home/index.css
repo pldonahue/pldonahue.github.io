@@ -1,0 +1,270 @@
+.home {
+  position: relative;
+  font-family: Inter, sans-serif;
+}
+
+.home__main {
+  margin-left: 240px;
+  padding: 56px 30px;
+  min-height: 100vh;
+}
+
+.welcome {
+  position: relative;
+}
+
+.welcome__close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.welcome__close:hover {
+  opacity: 0.7;
+}
+
+.welcome__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.welcome__details {
+  flex: 4;
+}
+
+.stats {
+}
+.stats__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+.stat__button {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.stat__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.stat__details__title {
+  margin: 5px 0;
+}
+
+.stat:not(:last-child) {
+  margin-right: 24px;
+}
+
+.stats-chart {
+}
+
+.stats-chart__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats-chart__element {
+  height: 600px;
+  width: 100%;
+}
+
+.stats-chart__element__container {
+  height: 300px;
+}
+
+.round-chart {
+}
+
+.round-chart__inner h2 {
+  display: flex;
+  justify-content: space-between;
+}
+.round-chart__element {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.round-chart__element svg {
+  width: 100%;
+  max-width: 600px;
+}
+
+.round-chart__element svg circle {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+}
+
+.round-chart__text {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.round-chart__legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  bottom: 0;
+}
+
+.round-chart__legend__item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.round-chart__legend__bullet {
+  height: 15px;
+  width: 15px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+.round-chart__legend__bullet {
+}
+
+.stats-tables {
+}
+
+.stats-tables__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-tables__left-side {
+  flex: 1;
+  margin-right: 45px;
+}
+.stats-tables__right-side {
+  flex: 1;
+}
+
+.table-highlighting {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-highlighting__tags {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.table-highlighting__tags__left-side {
+  display: flex;
+}
+
+.table-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-user__tags {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+
+.table-user__tags__left-side {
+  display: flex;
+}
+
+.table-actions {
+  display: flex;
+}
+
+.welcome__cta {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 40px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .round-chart__legend {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: unset;
+    bottom: 0;
+    flex-wrap: wrap;
+  }
+  .round-chart__legend__item {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .stats-tables__inner {
+    flex-direction: column;
+  }
+  .stats-tables__left-side {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .stats__inner {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .stat {
+    width: 100%;
+  }
+  .welcome__details {
+    flex: 2;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .welcome__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home__main {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .stats__inner {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .home__main {
+    padding: 56px 15px;
+  }
+  .stats-chart__element__container {
+    height: 220px;
+  }
+}
